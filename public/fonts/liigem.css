@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Dekar'; /*a name to be used later*/
+    src: url('Dekar.oft'); /*URL to font*/
+}
+@font-face {
+    font-family: 'DekarLight'; /*a name to be used later*/
+    src: url('DekarLight.oft'); /*URL to font*/
+}

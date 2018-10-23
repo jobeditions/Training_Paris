@@ -1,0 +1,438 @@
+/*
+ * Copyright (c) Liigem 2017.
+ */
+
+@font-face {
+  font-family: 'simple-line-icons';
+  src: url("/fonts/simple-line/Simple-Line-Icons.woff"),
+    url("/fonts/simple-line/Simple-Line-Icons.woff2"),
+    url("/fonts/simple-line/Simple-Line-Icons.eot"),
+    url("/fonts/simple-line/Simple-Line-Icons.svg"),
+    url("/fonts/simple-line/Simple-Line-Icons.ttf");
+}
+
+.thead-inverse {
+    background-color: #55595c;
+    color:#eceeef;
+}
+
+.labels > .label {
+    display: inline-block;
+}
+
+.activity-visibility {
+    margin-bottom: 10px;
+}
+
+.fixed-size > * {
+    height: 200px;
+}
+
+.table > tbody > tr:first-child > td {
+    border: none;
+}
+
+.teacher-page .not-yours, .assignments .assignment-over {
+    opacity: 0.5;
+    transition: 1s linear;
+}
+
+.teacher-page .not-yours:hover, .assignments .assignment-over:hover {
+    opacity: 1;
+}
+
+.resources ul {
+    list-style-type: none !important;
+}
+
+.messages .wrapper {
+    max-height: 400px;
+    overflow: auto;
+}
+
+#teachers h1 {
+    margin-bottom: 3rem;
+}
+
+#teachers h1 small {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+#teachers h1:nth-of-type(2) {
+    margin-top: 6rem;
+}
+
+table.files tbody tr td  {
+    vertical-align: middle!important;
+}
+
+.nota-bene {
+    opacity: 0.7;
+}
+
+
+.dates .media div.media-right.media-bottom button {
+    margin-bottom: 10px;
+}
+
+.dates .progress {
+    margin-bottom: 8px !important;
+}
+
+i.big {
+    font-size: 60px !important;
+}
+
+i.big + h1 {
+    font-size: 50px;
+}
+
+i[class^="icon-"] {
+    font-family: 'simple-line-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 0.8em;
+    margin-right: 4px;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-note:before {
+  content: "\e060";
+}
+.icon-calender:before {
+  content: "\e075";
+}
+.icon-doc:before {
+  content: "\e085";
+}
+.icon-user:before {
+  content: "\e005";
+}
+.icon-book-open:before {
+    content: "\e04c";
+}
+.icon-folder:before {
+    content: "\e089";
+}
+.icon-notebook:before {
+    content: "\e013";
+}
+.icon-docs:before {
+  content: "\e040";
+}
+.icon-speech:before {
+  content: "\e02c";
+}
+.icon-close:before {
+  content: "\e082";
+}
+.icon-arrow-up-circle:before {
+  content: "\e078";
+}
+.icon-check:before {
+  content: "\e080";
+}
+.icon-info:before {
+  content: "\e08b";
+}
+
+/*Progressbars*/
+.progress {
+  -webkit-box-shadow: none !important;
+  background-color: rgba(120, 130, 140, 0.13);
+  box-shadow: none !important;
+  height: 4px;
+  border-radius: 0px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.progress-bar {
+  box-shadow: none;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 12px;
+}
+.progress.progress-sm {
+  height: 8px !important;
+}
+.progress.progress-sm .progress-bar {
+  font-size: 8px;
+  line-height: 5px;
+}
+.progress.progress-md {
+  height: 15px !important;
+}
+.progress.progress-md .progress-bar {
+  font-size: 10.8px;
+  line-height: 14.4px;
+}
+.progress.progress-lg {
+  height: 20px !important;
+}
+.progress.progress-lg .progress-bar {
+  font-size: 12px;
+  line-height: 20px;
+}
+.progress-bar-primary {
+  background-color: #ab8ce4;
+}
+.progress-bar-success {
+  background-color: #00c292;
+}
+.progress-bar-info {
+  background-color: #03a9f3;
+}
+.progress-bar-megna {
+  background-color: #01c0c8;
+}
+.progress-bar-warning {
+  background-color: #fec107;
+}
+.progress-bar-danger {
+  background-color: #fb9678;
+}
+.progress-bar-inverse {
+  background-color: #4c5667;
+}
+.progress-bar-purple {
+  background-color: #9675ce;
+}
+.progress-bar-custom {
+  background-color: #03a9f3;
+}
+.progress-animated {
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: myanimation;
+  -webkit-transition: 5s all;
+  animation-duration: 5s;
+  animation-name: myanimation;
+  transition: 5s all;
+}
+/* Progressbar Animated */
+@-webkit-keyframes myanimation {
+  from {
+    width: 0;
+  }
+}
+@keyframes myanimation {
+  from {
+    width: 0;
+  }
+}
+/* Progressbar Vertical */
+.progress-vertical {
+  min-height: 250px;
+  height: 250px;
+  width: 4px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+.progress-vertical .progress-bar {
+  width: 100%;
+}
+.progress-vertical-bottom {
+  min-height: 250px;
+  height: 250px;
+  position: relative;
+  width: 4px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+.progress-vertical-bottom .progress-bar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.progress-vertical.progress-sm,
+.progress-vertical-bottom.progress-sm {
+  width: 8px !important;
+}
+.progress-vertical.progress-sm .progress-bar,
+.progress-vertical-bottom.progress-sm .progress-bar {
+  font-size: 8px;
+  line-height: 5px;
+}
+.progress-vertical.progress-md,
+.progress-vertical-bottom.progress-md {
+  width: 15px !important;
+}
+.progress-vertical.progress-md .progress-bar,
+.progress-vertical-bottom.progress-md .progress-bar {
+  font-size: 10.8px;
+  line-height: 14.4px;
+}
+.progress-vertical.progress-lg,
+.progress-vertical-bottom.progress-lg {
+  width: 20px !important;
+}
+.progress-vertical.progress-lg .progress-bar,
+.progress-vertical-bottom.progress-lg .progress-bar {
+  font-size: 12px;
+  line-height: 20px;
+}
+/********** Text colors **********/
+.text-white {
+  color: #ffffff;
+}
+.text-danger {
+  color: #fb9678;
+}
+.text-muted {
+  color: #8d9ea7;
+}
+.text-warning {
+  color: #fec107;
+}
+.text-success {
+  color: #00c292;
+}
+.text-info {
+  color: #03a9f3;
+}
+.text-inverse {
+  color: #4c5667;
+}
+.text-blue {
+  color: #02bec9;
+}
+.text-purple {
+  color: #9675ce;
+}
+.text-primary {
+  color: #ab8ce4;
+}
+.text-megna {
+  color: #01c0c8;
+}
+.text-dark {
+  color: #686868 !important;
+}
+.m-t-10 {
+  margin-top: 10px !important;
+}
+
+.red-box {
+    background:#fb9678 !important;
+    color:white !important;
+}
+
+.blue-box {
+    background: #01c0c8 !important;
+    color:white !important;
+}
+
+.green-box {
+    background: #00c292 !important;
+    color:white !important;
+}
+
+.black-box {
+    background: #292929 !important;
+    color:white !important;
+}
+
+.white-box {
+
+  background: #ffffff;
+  padding: 25px;
+    /*margin-bottom: 15px;*/
+    /*box-shadow: 2px 2px 5px rgba(0,0,0,0.4);*/
+}
+.white-box .box-title {
+  margin: 0px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.white-box-content {
+    margin-bottom: 20px;
+}
+
+.white-box .box-sub {
+    margin: 0px 0px 8px 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+}
+.white-box .box-content {
+    min-height: 40px;
+}
+.white-box hr {
+    margin: 11px;
+}
+/*Stats Row*/
+.stats-row {
+  margin-bottom: 20px;
+}
+.stat-item {
+  display: inline-block;
+  padding-right: 15px;
+}
+.stat-item + .stat-item {
+  padding-left: 15px;
+  border-left: 1px solid #eee;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\f0de";
+}
+
+
+.table.calendar  {
+    border-color: black !important;
+}
+
+.calendar tr td {
+    border:1px solid black;
+    height:80px;
+}
+
+.calendar .another-month {
+    opacity: 0.2;
+    background-color: gray;
+}
+
+.calendar .current {
+    background:  rgba(30, 144, 255, 0.2);
+    cursor: pointer;
+}
+
+.calendar .normal:hover {
+    background-color: rgba(30, 144, 255, 0.1);
+    cursor: pointer;
+}
+
+.white-box blockquote {
+    margin: 0;
+}
+
+.breadcrumb {
+    margin-top: 0;
+    padding: 10px 140px;
+    text-align: right;
+    background: #fff;
+    font-size: 16px;
+}
+
+.navbar-no-margin {
+    margin-bottom: 0;
+}

@@ -1,0 +1,70 @@
+/*
+ * Copyright (c) Liigem 2017.
+ */
+
+.cours {
+    background: rgba(235, 235, 235, 0.7);
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    line-height: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.edt-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cours-2 {
+    height: 120px;
+}
+
+.cours-3 {
+    height: 180px;
+}
+
+.cours-4 {
+    height: 240px;
+}
+
+.pause {
+    background: rgba(0, 0, 0, 0.7);
+    height: 5px;
+}
+
+.cours-orange {
+    background: rgba(255, 101, 0, 0.7);
+}
+
+.cours-blue {
+    background: rgba(101, 136, 239, 0.7);
+}
+
+.cours-lime {
+    background: rgba(170, 239, 101, 0.7);
+}
+
+.cours-green {
+    background: rgba(101, 190, 72, 0.7);
+}
+
+.cours-red {
+    background: rgba(190, 72, 72, 0.7);
+}
+
+.cours-purple {
+    background: rgba(190, 72, 161, 0.7);
+}
+
+.cours-mauve {
+    background: rgba(131, 72, 190, 0.7);
+}
+
+.cours-yellow {
+    background: rgba(249, 191, 13, 0.7);
+}
+
+.cours-cian {
+    background: rgba(72, 190, 190, 0.7);
+}

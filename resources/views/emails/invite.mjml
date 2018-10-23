@@ -1,0 +1,83 @@
+<mjml>
+
+  <mj-head>
+    <mj-title>Invitation</mj-title>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,500" />
+
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, sans-serif" />
+      <mj-text font-weight="300" font-size="16" color="#616161" line-height="24px" />
+      <mj-section padding="0" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body>
+    <mj-container>
+
+      <mj-section padding="20px 0">
+   
+        <mj-column><mj-text align="right">teacherhawk.com</mj-text></mj-column>
+          
+          </mj-section>
+
+      <mj-section>
+        <mj-column width="100%">
+          <mj-image href="https://recast.ai?ref=newsletter" src="https://cdn.recast.ai/newsletter/city-01.png" />
+        </mj-column>
+        <mj-column width="100%">
+          <mj-text align="center">
+         </mj-text>
+        </mj-column>
+        <mj-column width="100%"></mj-column>
+        <mj-column width="25%">
+          <mj-divider border-width="2px" border-color="#616161" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-top="30px">
+        <mj-column width="100%">
+          <mj-text>
+            <p>Monsieur, Madame</p>
+            <p>
+              Félicitations ! Nous vous informons que votre ami {{ $name }} vous a offert 3 mois d'accès gratuit à notre platforme, TeacherHawk
+            </p>
+            <p>TeacherHawk est une platforme développée par la startup parisienne Liigem ayant pour but de faciliter et d'améliorer la communication entre professeurs et élèves.</p>
+            <p>Pour profitez de cette invitation, je vous invite à cliquer sur le lien ci-dessous et à rentrer le code {{ $code  }} lors de votre inscription.</p>
+          </mj-text>
+        </mj-column>
+                    <mj-link href="{{ url('register') }}">S'inscrire</mj-link>
+
+
+        <mj-column width="100%">
+          <mj-divider border-width="1px" border-color="#E0E0E0" />
+        </mj-column>
+      </mj-section>
+
+    
+
+      <mj-section>
+        <mj-column width="65%">
+                        <mj-text>
+
+    Liigem 2017
+            </mj-text>
+
+        </mj-column>
+        <mj-column width="35%">
+          <mj-table>
+            <tr style="list-style: none;">
+              <td>
+                <a href="https://twitter.com/TeacherHawk_Lii">
+                  <img width="25px" src="https://cdn.recast.ai/newsletter/twitter.png" />
+                </a>
+              </td>
+              
+                </a>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>

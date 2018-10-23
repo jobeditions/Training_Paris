@@ -1,0 +1,16 @@
+image: smartapps/bitbucket-pipelines-php-mysql
+
+
+pipelines:
+  default:
+    - step:
+        script:
+          - php -r "file_exists('.env') || copy('.env.example', '.env');"
+          - composer update
+          - composer install
+          - service mysql start
+          - mysql -h localhost --user=root --password=root -e "CREATE DATABASE teacherhawk;"
+          - php artisan migrate --seed
+          - php  artisan config:cache
+          - php artisan key:generate
+          - phpunit

@@ -1,0 +1,15 @@
+.carousel-control              { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+.carousel-caption h3{
+	top:80%;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev        { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+    .active > div:first-child + div { display:block; }
+}

@@ -1,0 +1,181 @@
+
+ #vertical-thin {
+    max-width:400px; 
+    overflow: visible;
+    margin-left: -30%; 
+    margin-top: 9%;
+
+z-index: 10;
+
+}
+
+ #vertical-inner{
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    width: 250px;
+ }
+
+/*
+    This is the item wrapper,
+    it will be animated.
+*/
+#vertical-thin ul {
+    list-style: none;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0px;
+}
+
+/*
+    These are the items
+*/
+#vertical-thin li {
+    margin: 3px 0 0;
+}
+#vertical-thin li:hover{
+	
+	overflow: visible;
+}
+
+#vertical-thin img{
+  width:150px;
+  height:150px;
+  margin-left: 19%;
+}
+#vertical-thin img:hover {
+transform: scale(1.4,1.05);
+border:5px solid #000;
+}
+.prev, .next {
+    font-size: 30px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    margin-left: -9%;
+
+}
+#vertical-thin li:first-child {
+    margin: 0;
+}
+/* .info-box
+
+=================================================================== */
+
+
+.info-box {
+
+  
+position: relative;
+  margin: 30px 0;
+  padding: 10px;
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+  color: white;
+
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
+
+  -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
+
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
+
+}
+.info-box:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.3);
+  transition: all .3s linear;
+}
+.info-box:hover:before { background: none; }
+
+
+.i3:hover:before { background: rgba(0,0,0, 0.85); }
+
+
+.info-box i {
+  position: absolute; 
+  top: 35px;
+  font-size: 50px;
+
+  line-height: 60px;
+
+  width: 30%;
+
+  text-align: center;
+
+  margin-left:30%;
+  
+ color: rgba(255, 255, 255, 0.75);
+
+   background-color: rgba(0,0,0,.7);
+   border-radius: 50%;
+border: 1x solid grey;
+ padding:10px;
+ z-index: 2;
+
+
+}
+
+.info-box h5 { 
+   position: absolute; 
+   top: 225px; 
+   margin:auto auto auto auto;
+
+   text-align: center;
+   width: 100%; 
+
+   font-size: 15px;
+
+  font-weight: 700;
+    z-index: 2;
+}
+
+.info-box h4{ 
+   position: absolute; 
+   top: 175px;
+   margin:auto ;
+
+   text-align: center;
+   width: 100%; 
+
+   font-size: 12;
+
+  font-weight: 600;
+
+  z-index: 2;
+
+}
+
+.info-box img {
+   
+  height: 350px;
+  width: 250px;
+
+  margin-left:-1%;
+
+  
+z-index:0;
+}
+
+.info-box button{
+
+position: absolute; 
+top: 85%;
+margin:auto 20%;
+z-index: 2;
+}
+
+#student-container{
+	background: #42d4f4;
+
+	
+	margin-top:6%;
+	
+	padding-left: 1%;
+}
